@@ -11,9 +11,14 @@ public class Controller {
 		return "Public endpoint - no auth needed";
 	}
 
-	@GetMapping("/private")
-	public String privateEndpoint() {
-		return "Private endpoint - auth required";
+	@GetMapping("/admin")
+	public String adminEndpoint() {
+		return "ADMIN endpoint - auth required";
+	}
+	
+	@GetMapping("/user")
+	public String userEndpoint() {
+		return "USER endpoint - auth required";
 	}
 
 }
